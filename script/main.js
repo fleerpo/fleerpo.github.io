@@ -22,7 +22,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = myName + '酷毙了，' + myName;
+    myHeading.innerHTML = 'Mozilla 酷毙了，' + myName;
   }
 }
 
