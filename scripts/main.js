@@ -31,7 +31,7 @@ if (!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.textContent = storedName + '酷毙了!' + storedName;
+  myHeading.textContent = storedName + '酷毙了!';
 }
 
 // 为按钮设置 onclick 事件处理器：
