@@ -17,12 +17,12 @@ let myHeading = document.querySelector('h1');
 
 // 个性化欢迎信息设置函数
 function setUserName() {
-  let myName = prompt('请输入密码。');
+  let myName = prompt('请输入用户名。');
   if (!myName || myName === null) {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = '爷爷' + '！生日快乐！';
+    myHeading.innerHTML = myName + '！生日快乐！';
   }
 }
 
@@ -31,7 +31,7 @@ if (!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.textContent = '爷爷' + '！生日快乐！';
+  myHeading.textContent = myName + '！生日快乐！';
 }
 
 // 为按钮设置 onclick 事件处理器：
